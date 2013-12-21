@@ -7,7 +7,7 @@
   "description": "Grunt task for use JSCPD lib",
   "main": "Gruntfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "grunt test"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,9 @@
     "grunt": "~0.4"
   },
   "devDependencies": {
-    "grunt": "~0.4.2"
+    "grunt": "~0.4.2",
+    "grunt-mocha-test": "~0.8.1",
+    "chai-fs": "0.0.3",
+    "chai": "~1.8.1"
   }
 }
