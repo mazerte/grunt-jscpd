@@ -1,0 +1,39 @@
+{
+  "name": "grunt-jscpd",
+  "version": "0.0.1",
+  "author": {
+    "name": "Mathieu Desvé"
+  },
+  "description": "Grunt task for use JSCPD lib",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mazerte/grunt-jscpd"
+  },
+  "keywords": [
+    "grunt",
+    "coffeescript",
+    "javascript",
+    "cpd",
+    "copy",
+    "paste",
+    "detection",
+    "pmd"
+  ],
+  "license": "BSD",
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "jscpd": "git://github.com/mazerte/jscpd"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2"
+  }
+}
