@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 
     try {
       var instance = new jscpd();
-      var result = instance.run(options);
+      instance.run(options);
     } catch(err) {
       grunt.log.error("Error: " + err.message);
       throw err;
