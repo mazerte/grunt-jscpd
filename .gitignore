@@ -1,3 +1,4 @@
 node_modules
 test/coffee-output.xml
 test/js-output.xml
+.idea

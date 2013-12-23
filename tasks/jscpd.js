@@ -2,7 +2,7 @@ var jscpd = require('jscpd');
 
 module.exports = function(grunt) {
 
-  grunt.registerMultiTask('jscdp', 'Find copy/paste', function() {
+  grunt.registerMultiTask('jscpd', 'Find copy/paste', function() {
   
     var options = this.options({
       coffee: false
