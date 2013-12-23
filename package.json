@@ -28,7 +28,7 @@
     "node": "*"
   },
   "dependencies": {
-    "jscpd": "git://github.com/mazerte/jscpd"
+    "jscpd": "~0.2.12"
   },
   "peerDependencies": {
     "grunt": "~0.4"
