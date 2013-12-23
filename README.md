@@ -29,7 +29,7 @@ Create a "jscpd" section in your Gruntfile
 ```javascript
 // Gruntfile.js
 grunt.initConfig({
-  jscdp: {
+  jscpd: {
     javascript: {
       path: 'lib/js/'
     }
@@ -41,7 +41,7 @@ Example with coffee option
 ```coffeescript
 // Gruntfile.js
 grunt.initConfig({
-  jscdp: {
+  jscpd: {
     coffeescript: {
       options: {
         coffee: true

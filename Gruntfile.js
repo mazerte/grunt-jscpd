@@ -9,7 +9,7 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
 
-    jscdp: {
+    jscpd: {
       javascript: {
         path: 'test/fixtures/',
         output: 'test/js-output.xml'
@@ -35,7 +35,7 @@ module.exports = function(grunt) {
   });
 
   // Default task.
-  grunt.registerTask('default', ['jscdp']);
-  grunt.registerTask('test', ['jscdp', 'mochaTest']);
+  grunt.registerTask('default', ['jscpd']);
+  grunt.registerTask('test', ['jscpd', 'mochaTest']);
 
 };
