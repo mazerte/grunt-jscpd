@@ -15,6 +15,7 @@
   },
   "keywords": [
     "grunt",
+    "gruntplugin",
     "coffeescript",
     "javascript",
     "cpd",
