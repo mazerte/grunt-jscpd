@@ -33,7 +33,7 @@ grunt.initConfig({
   jscpd: {
     javascript: {
       path: 'lib/js/',
-      exclude: 'globalize/**'
+      exclude: ['globalize/**', 'plugins/**']
     }
   }
 }
