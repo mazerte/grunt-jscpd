@@ -8,6 +8,7 @@ module.exports = function(grunt) {
       coffee: false
     });
     options.path = this.data.path;
+    options.exclude = this.data.exclude;    
     options.output = this.data.output;
 
     console.log(jscpd);
