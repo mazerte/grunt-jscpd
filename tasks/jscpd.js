@@ -10,6 +10,12 @@ module.exports = function(grunt) {
     options.path = this.data.path;
     options.output = this.data.output;
 
+    if (this.data.exclude === undefined) {
+      options.exclude = null;
+    } else {
+      options.exclude = this.data.exclude;
+    }
+
     console.log(jscpd);
 
     try {
