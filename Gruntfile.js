@@ -20,6 +20,16 @@ module.exports = function(grunt) {
         },
         path: 'test/fixtures/',
         output: 'test/coffee-output.xml'
+      },
+      javascriptWithExcludeString: {
+        path: 'test/fixtures/',
+        output: 'test/js-exclude-string-output.xml',
+        exclude: 'file_3.js'
+      },
+      javascriptWithExcludeArray: {
+        path: 'test/fixtures/',
+        output: 'test/js-exclude-array-output.xml',
+        exclude: ['file_2.js', 'file_3.js']
       }
     },
 

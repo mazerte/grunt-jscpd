@@ -32,7 +32,8 @@ Create a "jscpd" section in your Gruntfile
 grunt.initConfig({
   jscpd: {
     javascript: {
-      path: 'lib/js/'
+      path: 'lib/js/',
+      exclude: ['globalize/**', 'plugins/**']
     }
   }
 }
@@ -62,6 +63,11 @@ Options
 Type: `String`
 
 Path to source folder
+
+#### exclude
+Type: `String|Array` - optional
+
+Glob pattern for files to exclude from the analysis. 
 
 #### output
 Type: `String` - optional 
