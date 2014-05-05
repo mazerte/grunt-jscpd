@@ -23,12 +23,12 @@ module.exports = function(grunt) {
       },
       javascriptWithExcludeString: {
         path: 'test/fixtures/',
-        output: 'test/js-output-exclude-string.xml',
+        output: 'test/js-exclude-string-output.xml',
         exclude: 'file_3.js'
       },
       javascriptWithExcludeArray: {
         path: 'test/fixtures/',
-        output: 'test/js-output-exclude-array.xml',
+        output: 'test/js-exclude-array-output.xml',
         exclude: ['file_2.js', 'file_3.js']
       }
     },

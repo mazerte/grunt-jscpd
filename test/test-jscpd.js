@@ -1,6 +1,5 @@
 var chai = require('chai'), 
     expect = chai.expect,
-    should = chai.should(),
     fs = require('fs'),
     chaiFS = require('chai-fs');
 
@@ -23,7 +22,7 @@ describe("Grunt JSCPD", function() {
 
     });
 
-    var javascriptOutputExcludeString = fs.readFileSync("test/js-output-exclude-string.xml", 'utf8');
+    var javascriptOutputExcludeString = fs.readFileSync("test/js-exclude-string-output.xml", 'utf8');
     it("Honours option `exclude` of type string", function() {
 
       /*
@@ -35,7 +34,7 @@ describe("Grunt JSCPD", function() {
         expect(javascriptOutputExcludeString).not.to.contain("file_3.js");
     });
 
-    var javascriptOutputExcludeArray = fs.readFileSync("test/js-output-exclude-array.xml", 'utf8');
+    var javascriptOutputExcludeArray = fs.readFileSync("test/js-exclude-array-output.xml", 'utf8');
     it("Honours option `exclude` of type array", function() {
 
       /*
