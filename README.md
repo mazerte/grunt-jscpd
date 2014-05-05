@@ -65,7 +65,7 @@ Type: `String`
 Path to source folder
 
 #### exclude
-Type: `String` - optional
+Type: `String|Array` - optional
 
 Glob pattern for files to exclude from the analysis. 
 
