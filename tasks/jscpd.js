@@ -12,6 +12,17 @@ module.exports = function(grunt) {
     }
   }
 
+  function ensureOutputDir(options) {
+    if (options.output) {
+      options.output = grunt.template.process(options.output);
+      var path = require("path");
+      var destDir = path.dirname(options.output);
+      if (!grunt.file.exists(destDir)) {
+        grunt.file.mkdir(destDir)
+      }
+    }
+  }
+
   grunt.registerMultiTask('jscpd', 'Find copy/paste', function() {
   
     var options = this.options({
@@ -23,6 +34,7 @@ module.exports = function(grunt) {
     options.output = this.data.output;
 
     ensureCleanPath(options);
+    ensureOutputDir(options);
 
     try {
       var instance = new jscpd();

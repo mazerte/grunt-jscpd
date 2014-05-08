@@ -30,6 +30,10 @@ module.exports = function(grunt) {
         path: 'test/fixtures/',
         output: 'test/js-exclude-array-output.xml',
         exclude: ['file_2.js', 'file_3.js']
+      },
+      javascriptWithUnexistedOutputDir: {
+        path: 'test/fixtures/',
+        output: 'test/unexisted/output/dir/js-output.xml'
       }
     },
 

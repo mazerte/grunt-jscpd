@@ -15,6 +15,12 @@ describe("Grunt JSCPD", function() {
 
     });
 
+    it("Generates non-empty file with JSCPD results in unexisted output dir", function () {
+
+      expect("test/unexisted/output/dir/js-output.xml").to.be.a.file().and.not.empty;
+
+    });
+
     var javascriptOutput = fs.readFileSync("test/js-output.xml", 'utf8');
     it("Identifies code duplication in 'file_3.js'", function() {
 
