@@ -18,7 +18,18 @@ module.exports = function(grunt) {
       var path = require("path");
       var destDir = path.dirname(options.output);
       if (!grunt.file.exists(destDir)) {
-        grunt.file.mkdir(destDir)
+        grunt.file.mkdir(destDir);
+      }
+    }
+  }
+
+  function ensureOutDir(options) {
+    if (options.out) {
+      options.output = grunt.template.process(options.out);
+      var path = require("path");
+      var destDir = path.dirname(options.out);
+      if (!grunt.file.exists(destDir)) {
+        grunt.file.mkdir(destDir);
       }
     }
   }
