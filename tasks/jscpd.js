@@ -23,6 +23,15 @@ module.exports = function(grunt) {
     }
   }
 
+  function failIfTooMuchDuplicateLines(threshold, resultMap) {
+    if (threshold) {
+      if (resultMap.numberOfDuplication > threshold) {
+        grunt.log.error("Error: too much duplicated lines");  
+        return false;
+      }
+    }
+  }
+
   grunt.registerMultiTask('jscpd', 'Find copy/paste', function() {
   
     var options = this.options({
@@ -38,7 +47,8 @@ module.exports = function(grunt) {
 
     try {
       var instance = new jscpd();
-      instance.run(options);
+      var result = instance.run(options);
+      return failIfTooMuchDuplicateLines(options.threshold, result.map);
     } catch(err) {
       grunt.log.error("Error: " + err.message);
       throw err;
