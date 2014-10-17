@@ -18,7 +18,7 @@ module.exports = function(grunt) {
       var path = require("path");
       var destDir = path.dirname(options.output);
       if (!grunt.file.exists(destDir)) {
-        grunt.file.mkdir(destDir)
+        grunt.file.mkdir(destDir);
       }
     }
   }
@@ -26,7 +26,7 @@ module.exports = function(grunt) {
   function failIfTooMuchDuplicateLines(threshold, resultMap) {
     if (threshold) {
       if (resultMap.numberOfDuplication > threshold) {
-        grunt.log.error("Error: too much duplicated lines");  
+        grunt.log.error("Error: too much duplicated lines");
         return false;
       }
     }
@@ -41,6 +41,12 @@ module.exports = function(grunt) {
     options.path = this.data.path;
     options.exclude = this.data.exclude || null;
     options.output = this.data.output;
+
+    if (this.data.exclude === undefined) {
+      options.exclude = null;
+    } else {
+      options.exclude = this.data.exclude;
+    }
 
     ensureCleanPath(options);
     ensureOutputDir(options);
