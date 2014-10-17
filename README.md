@@ -74,6 +74,11 @@ Type: `String` - optional
 
 Path to the output file
 
+#### exclude
+Type: `String` or `Array` - optional
+
+Path to directory or files to ignore
+
 ### Options
 
 #### coffee
