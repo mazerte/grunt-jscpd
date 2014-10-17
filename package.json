@@ -29,7 +29,7 @@
     "node": "*"
   },
   "dependencies": {
-    "jscpd": "~0.2.12"
+    "jscpd": "~0.3.3"
   },
   "peerDependencies": {
     "grunt": "~0.4"
