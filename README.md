@@ -20,7 +20,7 @@ npm install grunt-jscpd
 
 ```javascript
 // Gruntfile.js
-grunt.loadNpmTasks('grunt-jspcpd');
+grunt.loadNpmTasks('grunt-jscpd');
 ```
 
 Usage
